@@ -38,7 +38,7 @@ document.getElementById('loginForm').addEventListener('submit',(e) => {
 
 existingBtn.addEventListener("click", () => {
 	const savedUser = localStorage.getItem("username");
-	if(savedUser){
+	if(savedUser) {
 		alert(`Logged in as ${savedUser}`);
 	}
 });
