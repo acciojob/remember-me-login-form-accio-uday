@@ -1,20 +1,20 @@
 //your JS code here. If required.
-const usernameInput = document.getElementById('username');
-const passwordInput = document.getElementById('password');
-const checkbox = document.getElementById('checkbox');
-const submitBtn = document.getElementById('submit');
-const existingBtn = document.getElementById('existing');
+const usernameInput = document.getElementById("username");
+const passwordInput = document.getElementById("password");
+const checkbox = document.getElementById("checkbox");
+const submitBtn = document.getElementById("submit");
+const existingBtn = document.getElementById("existing");
 
 window.addEventListener("DOMContentLoaded", () => {
-	const savedUser = localstorage.getItem('username');
-	const savedPass = localstorage.getItem('password');
+	const savedUser = localstorage.getItem("username");
+	const savedPass = localstorage.getItem("password");
 
 	if (savedUser && savedPass) {
 		existingBtn.style.display = "inline";
 	}
 });
 
-document.getElementById('loginForm').addEventListener('submit', (e) => {
+document.getElementById('loginForm').addEventListener("submit", (e) => {
 	e.preventDefault();
 	const username = usernameInput.value;
 	const password = passwordInput.value;
