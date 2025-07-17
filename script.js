@@ -14,7 +14,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	}
 });
 
-document.getElementById('loginForm').addEventListener('submit',(e) => {
+document.getElementById('loginForm').addEventListener('submit', (e) => {
 	e.preventDefault();
 	const username = usernameInput.value;
 	const password = passwordInput.value;
